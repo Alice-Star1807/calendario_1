@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Escolar / Início</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>    
+<body>
+    <div id="area-abecalho"></div>
+
+    <main class="conteudo-principal">
+        <section class="resumos" arial-label="Resumo dos eventos">
+            <div class="resumo azul">
+                <span class="resumo numero" id="quantidade-mes">0</span>
+                <span class="resumo-titulo">eventos este mês</span>
+                <span class="resumo-legenda" id="nome-mes-resumo">Agosto</span>
+            </div>
+
+            <div class="resumo bege">
+                <span class="resumo-numero" id="quantidade-ano">0</span>
+                <span class="resumo-titulo">Eventos este ano</span>
+            </div>
+
+            <div class="resumo-verde">
+                <span class="resumo-numero" id="quantidade-presenca">0</span>
+                <span class="resumo-titulo">Presencas confirmadas</span>
+                <span class="resumo-legenda">por você</span>
+            </div>
+        </section>
+
+        <section class="proximo-evento">
+            <div class="proximo-icone">📅</div>
+            <div class="proximo-conteudo">
+                <div class="proximo-rotulo">Próximo evento</div>
+                <div class="proximo-titulo">Concurso de talentos</div>
+                <div class="proximo-detalhes">15 de agosto de 2026 • ◴ 18:00 - 21:00</div>
+            </div>
+            <div class="proximo dias">
+                <strong>5</strong>
+                <span>dias restantes</span>
+            </div>
+        </section>
+
+        <section class="area-calendario">
+            <div class="cartao calendario">
+                <div class="calendario-topo">
+                    <button class="calendario-seta" id="mes-anterior" aria-label="Mês anterior"><</button>
+                    <h2 id="titulo-mes">Agosto 2026</h2>
+                    <button class="calendario-seta" id="proximo-mes"  aria-label="Proximo mês">></button>
+                </div>
+            </div>
+            
+            <div class="semana">
+                <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sab</div>
+            </div>
+            <div class="dias-calendario" id="dias-calendario"></div>
+        </div>
+        
+        <aside class="cartao detalhe-dia">
+            <div class="detalhe-data" id="detalhe-data"></div>
+            <div id="detalhe-evento"></div>
+        </aside>
+        </section>
+    </main>
+
+    <div id="area-rodape"></div>
+
+    <script src="js/dados.js"></script>
+    <script src="js/componentes.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>
